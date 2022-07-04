@@ -7,19 +7,22 @@
  */
 int main(void)
 {
-	char c;
+	int a = '0';
+	int b = 'a';
 
-	for (c = '0'; c <= '9'; c++)
+	while (a <= '9')
 	{
-		putchar(c);
+		putchar(a);
+		a++;
 	}
 
-	for (c = 'a'; c <= 'f'; c++)
+	while (b <= 'f')
 	{
-		putchar(c);
+		putchar(b);
+		b++;
 	}
 
-	putchar('\n');
+	putchar(10);
 
 	return (0);
 }
