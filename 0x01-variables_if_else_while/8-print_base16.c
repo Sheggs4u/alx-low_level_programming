@@ -2,27 +2,24 @@
 
 /**
  * main - Prints a hexadecimal string
- * 
+ *
  * Return: Always (Success)
  */
 int main(void)
 {
-	int a = '0';
-	int b = 'a';
+	char c;
 
-	while (a <= '9')
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(a);
-		a++;
+		putchar(c);
 	}
 
-	while (b <= 'f')
+	for (c = 'a'; c <= 'f'; c++)
 	{
-		putchar(b);
-		b++;
+		putchar(c);
 	}
 
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
